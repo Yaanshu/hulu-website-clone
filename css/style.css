@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: 'Rubik', sans-serif;
+    background-color: black;
+    color: #fff;
+    overflow-x: hidden;
+    line-height: 1.7;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: grey;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width:100%;
+}
+
+/* Buttons*/
+.btn{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    min-width: 135px;
+    padding: 15px 24px;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    line-height: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 23px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn-cta:hover{
+    opacity: 0.9;
+}
+
+.terms{
+    color: #8b94a7;
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+.sign-up{
+    margin-top: 5px;
+}
+
+/* Header */
+
+.header {
+    height: 90vh;
+    background: url(../img/header.jpg) no-repeat center center / cover;
+}
+
+.header nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.8rem 1.5rem;
+}
+
+.header nav .login-btn{
+    background: none;
+    color: #a8afbd;
+    font-family: 'Rubik', sans-serif;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header nav .login-btn:hover{
+    background-color: #a8afbd;
+    color: white;
+}
+
+.header .logo{
+    width: 600px;
+    margin: 20px 0px 17px 0px;
+}
+
+.header .header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:100px;
+}
+
+h5{
+    color: #1ce783;
+    font-weight: 450;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.header .header-text-1{
+    font-size: 24px;
+    font-weight: 430;
+    letter-spacing: 0.5px;
+    margin: 0px 400px;
+    text-align: center;
+    line-height: 1.2;
+    
+}
+
+/* Media Queries */
+@media (max-width:768px) {
+    .header{
+        height: 100vh;
+    }
+    
+    .header .header-content{
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .header .logo{
+        width:300px;
+    }
+    .header .header-text-1{
+        margin: 0px 20px;
+        font-size: 20px;
+    }
+
+    .btn-cta{
+         padding: 15px 40px;
+    }
+
+    .terms{
+        font-size: 11px;
+    }
+
+    .sign-up{
+        font-size: 17px;
+    }
+}

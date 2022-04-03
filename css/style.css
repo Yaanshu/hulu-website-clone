@@ -82,18 +82,17 @@ img{
 
 .header nav .login-btn{
     background: none;
-    color: #a8afbd;
+    color: white;
+    font-size: 15px;
     font-family: 'Rubik', sans-serif;
     border: none;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
-
-.header nav .login-btn:hover{
-    background-color: #a8afbd;
-    color: white;
+    position: absolute;
+    top: 30px;
+    right: 40px;
 }
 
 .header .logo{
@@ -316,6 +315,133 @@ h3{
     width: 40px;
 }
 
+/* FOOTER */
+.footer{
+    background: #ebedf2;
+    color: #333;
+}
+
+.footer a{
+    color: #656B7B;
+    font-size: 14px;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.footer-lists{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.footer-lists .list-head{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.divider{
+    width: 105%;
+    height: 3px;
+    border-top: 1px #ccc solid;
+    margin: 30px 0px;
+}
+
+.social-icons{
+    margin-top: 40px;
+}
+
+.social-icons img{
+    width: 20px;
+    height: 20px;
+    margin-right: 25px;
+}
+
+/* MODAL */
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-box{
+    margin: 10% auto;
+    width: 432px;
+    background:#fff;
+    color: #333;
+    position: relative;
+}
+
+.modal-body{
+    padding: 80px 50px 80px 50px;
+}
+
+.modal-body h3{
+    font-weight: 450;
+}
+
+.btn-dark{
+    background-color: grey;
+    color: white;
+}
+
+.modal-body .btn{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.modal .close{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.modal .modal-footer{
+    padding: 30px 0;
+    text-align: center;
+}
+
+.modal .modal-footer a{
+    color: steelblue;
+}
+
+.form-control{
+    margin: 20px 0;
+    
+}
+
+.form-control label{
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight:500;
+    letter-spacing: 1px;
+    color: #636E85;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 2px;
+    height: 45px;
+    padding: 5px 0;
+}
+
+form a{
+    color: steelblue;
+}
 
 /* Media Queries */
 @media (max-width: 1024px) {
@@ -399,5 +525,13 @@ h3{
 
     .live-sports .terms{
         margin-top: 30px;
+    }
+
+    .footer-lists{
+        flex-direction: column;
+    }
+
+    .modal .modal-box{
+        width: 350px;
     }
 }
